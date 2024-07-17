@@ -1,0 +1,14 @@
+<FileList>
+	<File Reference="ActiproSoftware.Shared.WinForms.dll">
+		<ToolboxItems UIFramework="WinForms" VSCategory="Actipro WinForms Controls" BlendCategory="Actipro WinForms Controls">
+			
+			<Item Type="ActiproSoftware.UI.WinForms.Controls.MarkupLabel.MarkupLabel" />
+			<Item Type="ActiproSoftware.UI.WinForms.Controls.ColorListBox" />
+			<Item Type="ActiproSoftware.UI.WinForms.Controls.ColorPalettePicker" />
+			<Item Type="ActiproSoftware.UI.WinForms.Controls.ScrollBar" />
+			<Item Type="ActiproSoftware.UI.WinForms.Controls.StandardColorPicker" />
+			<Item Type="ActiproSoftware.UI.WinForms.Controls.UIRendererManager" />
+			
+		</ToolboxItems>
+	</File>
+</FileList>

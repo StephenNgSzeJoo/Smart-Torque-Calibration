@@ -1,0 +1,383 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Z80NavBarControl
+</name>
+</assembly>
+<members>
+<member name="T:Z80NavBarControl.My.Resources.Resources">
+<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member>
+<member name="P:Z80NavBarControl.My.Resources.Resources.ResourceManager">
+<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member>
+<member name="P:Z80NavBarControl.My.Resources.Resources.Culture">
+<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member>
+<member name="P:Z80NavBarControl.My.Resources.Resources.ToolboxZ80Navbar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:Z80NavBarControl.Z80NavBar.NavBarItem">
+ <summary>
+ Z80_Navigation control Model for each item
+ </summary>
+</member>
+<member name="P:Z80NavBarControl.Z80NavBar.NavBarItem.ID">
+ <summary>
+ Item ID. All items must have unique ID number
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Z80NavBarControl.Z80NavBar.NavBarItem.Text">
+ <summary>
+ Text we see for our item
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Z80NavBarControl.Z80NavBar.NavBarItem.Icon">
+ <summary>
+ Icon for our item. Only Root (depth = 0) icons are displayed
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Z80NavBarControl.Z80NavBar.NavBarItem.Enabled">
+ <summary>
+ Item enability.
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Z80NavBarControl.Z80NavBar.NavBarItem.Visible">
+ <summary>
+ Item visibility
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Z80NavBarControl.Z80NavBar.NavBarItem.Selected">
+ <summary>
+ Item is selected
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Z80NavBarControl.Z80NavBar.NavBarItem.Expanded">
+ <summary>
+ Item is expanded
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Z80NavBarControl.Z80NavBar.NavBarItem.Content">
+ <summary>
+ Item has really selected. Only one item must have content = true at once
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Z80NavBarControl.Z80NavBar.NavBarItem.ParentID">
+ <summary>
+ Parent ID for this item. It is root item (depth = 0) parent ID will bi nothing
+ </summary>
+ <returns></returns>
+</member>
+<member name="F:Z80NavBarControl.Z80NavBar.NavBarItem.Childs">
+ <summary>
+ Child collection for that item
+ </summary>
+</member>
+<member name="P:Z80NavBarControl.Z80NavBar.NavBarItem.Height">
+ <summary>
+ Height (Panel) for that item
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Z80NavBarControl.Z80NavBar.NavBarItem.LeftChild">
+ <summary>
+ Act like a Identation on childs items
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Z80NavBarControl.Z80NavBar.NavBarItem.ContentBackColor">
+ <summary>
+ Color for glyph to match with content container (outside from Navigation control)
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Z80NavBarControl.Z80NavBar.NavBarItem.ToolTip">
+ <summary>
+ Item tooltip
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Z80NavBarControl.Z80NavBar.NavBarItem.#ctor">
+ <summary>
+ Default values
+ </summary>
+</member>
+<member name="T:Z80NavBarControl.Z80NavBar.ItemIcon">
+ <summary>
+ Item icons. Only for root items  (depth = 0)
+ </summary>
+</member>
+<member name="P:Z80NavBarControl.Z80NavBar.ItemIcon.Default">
+ <summary>
+ Default icon
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Z80NavBarControl.Z80NavBar.ItemIcon.Hover">
+ <summary>
+ Icon when hover on item
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Z80NavBarControl.Z80NavBar.ItemIcon.Selected">
+ <summary>
+ Icon when item has been selected
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:Z80NavBarControl.Z80NavBar.Themes.BlueTheme">
+ <summary>
+ Z80_Navigation control 'Blue' theme
+ </summary>
+</member>
+<member name="T:Z80NavBarControl.Z80NavBar.Themes.DarkTheme">
+ <summary>
+ Z80_Navigation control 'Dark' theme
+ </summary>
+</member>
+<member name="T:Z80NavBarControl.Z80NavBar.Themes.Theme">
+ <summary>
+ Z80_Navigation control theme enumerations
+ </summary>
+</member>
+<member name="T:Z80NavBarControl.Z80NavBar.Themes.ITheme">
+ <summary>
+ Z80_Navigation control theme interface
+ </summary>
+</member>
+<member name="T:Z80NavBarControl.Z80NavBar.Themes.ThemeSelector">
+ <summary>
+ Z80_Navigation control theme selector
+ </summary>
+</member>
+<member name="T:Z80NavBarControl.Z80_Navigation">
+ <summary>
+ Z80_Navigation user control working as 'navigation control'
+     ChangeLog:
+         - Version: 1.0.0.0 / Release 11-08-2016
+         - Version: 1.0.0.1 / Release 05-17-2017 (Tooltip behaviour)
+         - Version: 1.0.0.2 / Release 05-18-2017 (AutoVerticalScrollBar propery)
+         - Version: 1.0.0.3 / Release 05-19-2017 (ShowItemsBorder propery)
+         - Version: 1.0.0.4 / Release 05-19-2017 (Nuget version and Default event attribute)
+         - Version: 1.0.0.5 / Release 07-19-2017
+     
+ MIT license.
+ 
+ Copyright (c) 2016 Zilog80 (https://hackforums.net)
+ 
+ Permission is hereby granted, free of charge, to any person obtaining a copy of this 
+ software and associated documentation files (the "Software"), to deal in the Software 
+ without restriction, including without limitation the rights to use, copy, modify, 
+ merge, publish, distribute, sublicense, and/or sell copies of the Software, and to 
+ permit persons to whom the Software is furnished to do so, subject to the following 
+ conditions:
+ 
+ The above copyright notice and this permission notice shall be included in all copies 
+ or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
+ INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A 
+ PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT 
+ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF 
+ CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE 
+ OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ </summary>
+</member>
+<member name="F:Z80NavBarControl.Z80_Navigation._navBarItems">
+ <summary>
+ tree-node containing the whole item hierarchy
+ Injected in Initialize() method
+ </summary>
+</member>
+<member name="F:Z80NavBarControl.Z80_Navigation._theme">
+ <summary>
+ Theme used by drawing the control
+ Injected in Initialize() method
+ </summary>
+</member>
+<member name="F:Z80NavBarControl.Z80_Navigation.finalSelectedItem">
+ <summary>
+ Sometimes when click on item the 'real' selected is the 1st available chilc
+ </summary>
+</member>
+<member name="E:Z80NavBarControl.Z80_Navigation.SelectedItem">
+ <summary>
+ Event that triggers when a item was clicked (MyPanel)
+ </summary>
+ <param name="item"></param>
+</member>
+<member name="M:Z80NavBarControl.Z80_Navigation.Initialize(System.Collections.Generic.List{Z80NavBarControl.Z80NavBar.NavBarItem},Z80NavBarControl.Z80NavBar.Themes.ITheme)">
+ <summary>
+ Initialize (and draws) the control.
+ This method should de called only one time
+ </summary>
+ <param name="navbar">list of our navigation items</param>
+ <param name="theme">theme applied to control</param>
+</member>
+<member name="M:Z80NavBarControl.Z80_Navigation.AddItem(System.Int32,System.String,System.Int32,System.Int32)">
+ <summary>
+ Add a new item (always a child) in run-time to navigation control
+ </summary>
+ <param name="parentID">Parent ID</param>
+ <param name="text">Text for this new item</param>
+ <param name="itemID">The new item ID. Make sure that new item no longer exist in any other ithem</param>
+ <param name="leftChild">Optional value for left text position</param>
+</member>
+<member name="M:Z80NavBarControl.Z80_Navigation.ItemChangeEnable(System.Boolean,System.Int32)">
+ <summary>
+ Set item as enable or disable in run-time
+ </summary>
+ <param name="enable">if you set enable to false the item can not be clicked and also display as 'grayed'</param>
+ <param name="itemID">item ID we want to enable or disable</param>
+</member>
+<member name="M:Z80NavBarControl.Z80_Navigation.ItemChangeVisibility(System.Boolean,System.Int32)">
+ <summary>
+ Set item visibility in run-time
+ </summary>
+ <param name="visible">visibility value</param>
+ <param name="itemID">item ID we want to setup it visibility</param>
+</member>
+<member name="M:Z80NavBarControl.Z80_Navigation.ItemSelect(System.Int32)">
+ <summary>
+ Select item in run-time
+ </summary>
+ <param name="itemID">item ID we want to select</param>
+</member>
+<member name="M:Z80NavBarControl.Z80_Navigation.SetTheme(Z80NavBarControl.Z80NavBar.Themes.ITheme)">
+ <summary>
+ This property can be use for change the current theme in Run-Time
+ </summary>
+</member>
+<member name="M:Z80NavBarControl.Z80_Navigation.ItemUnselectAll">
+ <summary>
+ This method unselect all items. Can be used in Run-Time
+ </summary>
+</member>
+<member name="F:Z80NavBarControl.Z80_Navigation._item_yLocation">
+ <summary>
+ Auxiliary variable for right Y Location value for each item when we draw all items
+ </summary>
+</member>
+<member name="F:Z80NavBarControl.Z80_Navigation._itemsTotalHeight">
+ <summary>
+ Auxiliary variable for sum all items heights. Usefull for displaying VerticalScrollBar
+ </summary>
+</member>
+<member name="M:Z80NavBarControl.Z80_Navigation.DrawChilds(Z80NavBarControl.Z80NavBar.NavBarItem)">
+ <summary>
+ Draw child items (Recursive)
+ </summary>
+ <param name="item"></param>
+</member>
+<member name="M:Z80NavBarControl.Z80_Navigation.DrawControlItems">
+ <summary>
+ 'MAIN' method that draws all the items
+ </summary>
+</member>
+<member name="M:Z80NavBarControl.Z80_Navigation.OnItemClick(Z80NavBarControl.Z80NavBar.NavBarItem)">
+ <summary>
+ This item is fired when we click on a NavBarItemPanel UserControl
+ </summary>
+ <param name="item"></param>
+</member>
+<member name="P:Z80NavBarControl.Z80_Navigation.AutoVerticalScrollBar">
+ <summary>
+ If the sum of navigation items heights is greater than navigation control height it shows a vertical scroll bar
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Z80NavBarControl.Z80_Navigation.ShowItemsBorder">
+ <summary>
+ Show border for each navigation items
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Z80NavBarControl.Z80_Navigation.ShowSelectedGlyph">
+ <summary>
+ Show glyph for selected item. Introduced in 1.0.0.5
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Z80NavBarControl.Z80_Navigation.IconLocation">
+ <summary>
+ Default icon location. Introduced in 1.0.0.5
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:Z80NavBarControl.Z80_Navigation.NavBarItemPanel">
+ <summary>
+ Each item is 'draw' in this custom control (Panel)
+ This custom control is what we 'see' on screen
+ </summary>
+</member>
+<member name="F:Z80NavBarControl.Z80_Navigation.NavBarItemPanel._initialized">
+ <summary>
+ Flag to check if Initialize method has been called
+ </summary>
+</member>
+<member name="F:Z80NavBarControl.Z80_Navigation.NavBarItemPanel._hover">
+ <summary>
+ Flag to check Hover efect
+ </summary>
+</member>
+<member name="F:Z80NavBarControl.Z80_Navigation.NavBarItemPanel._theme">
+ <summary>
+ Item theme injected in Initialize() method
+ </summary>
+</member>
+<member name="F:Z80NavBarControl.Z80_Navigation.NavBarItemPanel._depth">
+ <summary>
+ Item depth injected in Initialize() method
+ </summary>
+</member>
+<member name="F:Z80NavBarControl.Z80_Navigation.NavBarItemPanel._navItem">
+ <summary>
+ Item we are drawing
+ </summary>
+</member>
+<member name="E:Z80NavBarControl.Z80_Navigation.NavBarItemPanel.ItemClick">
+ <summary>
+ Event we trigger when click on the panel control.
+ </summary>
+ <param name="item"></param>
+</member>
+<member name="F:Z80NavBarControl.Z80_Navigation.NavBarItemPanel._tooltip">
+ <summary>
+ Tooltip control
+ </summary>
+</member>
+<member name="F:Z80NavBarControl.Z80_Navigation.NavBarItemPanel._showItemBorder">
+ <summary>
+ New property introduced in 1.0.0.3
+ </summary>
+</member>
+<member name="F:Z80NavBarControl.Z80_Navigation.NavBarItemPanel._showSelectedGlyph">
+ <summary>
+ New property introduced in 1.0.0.5
+ </summary>
+</member>
+<member name="F:Z80NavBarControl.Z80_Navigation.NavBarItemPanel._iconLocation">
+ <summary>
+ New property introduced in 1.0.0.5
+ </summary>
+</member>
+</members>
+</doc>

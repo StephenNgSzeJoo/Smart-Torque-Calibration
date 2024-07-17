@@ -1,0 +1,714 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Wisej.Web.Ext.NavigationBar</name>
+    </assembly>
+    <members>
+        <member name="T:Wisej.Web.Ext.NavigationBar.NamespaceDoc">
+            <summary>
+            NavigationBar component. Implements a responsive navigation bar
+            that shows child items, a title panel and user panel.
+            </summary>
+        </member>
+        <member name="T:Wisej.Web.Ext.NavigationBar.NavigationBar">
+            <summary>
+            Represents a responsive vertical navigation bar that displays
+            an application header with logo, child items, and a user panel
+            with gravatar and other user information.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.NavigationBar.NavigationBar.#ctor">
+            <summary>
+            Initializes a new instance of <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBar"/>.
+            </summary>
+        </member>
+        <member name="E:Wisej.Web.Ext.NavigationBar.NavigationBar.TitleClick">
+            <summary>
+            Fired when the user clicks the title header.
+            </summary>
+        </member>
+        <member name="E:Wisej.Web.Ext.NavigationBar.NavigationBar.UserClick">
+            <summary>
+            Fired when the user clicks the user information panel.
+            </summary>
+        </member>
+        <member name="E:Wisej.Web.Ext.NavigationBar.NavigationBar.ItemClick">
+            <summary>
+            Fired when the user clicks an item in the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBar"/>.
+            </summary>
+        </member>
+        <member name="E:Wisej.Web.Ext.NavigationBar.NavigationBar.CompactViewChanged">
+            <summary>
+            Fireds when the value of the property <see cref="P:Wisej.Web.Ext.NavigationBar.NavigationBar.CompactView"/> changes.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.NavigationBar.NavigationBar.OnTitleClick(System.EventArgs)">
+            <summary>
+            Fires the <see cref="E:Wisej.Web.Ext.NavigationBar.NavigationBar.TitleClick"/> event.
+            </summary>
+            <param name="e">Not used.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.NavigationBar.NavigationBar.OnUserClick(System.EventArgs)">
+            <summary>
+            Fires the <see cref="E:Wisej.Web.Ext.NavigationBar.NavigationBar.UserClick"/> event.
+            </summary>
+            <param name="e">Not used.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.NavigationBar.NavigationBar.OnCompactViewChanged(System.EventArgs)">
+            <summary>
+            Fires the <see cref="E:Wisej.Web.Ext.NavigationBar.NavigationBar.CompactViewChanged"/> event.
+            </summary>
+            <param name="e">Not used.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.NavigationBar.NavigationBar.OnItemClick(Wisej.Web.Ext.NavigationBar.NavigationBarItemClickEventArgs)">
+            <summary>
+            Fires the <see cref="E:Wisej.Web.Ext.NavigationBar.NavigationBar.CompactViewChanged"/> event.
+            </summary>
+            <param name="e">Not used.</param>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.CompactView">
+            <summary>
+            Returns or sets the compact view mode.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.Logo">
+            <summary>
+            Returns or sets the logo to display in the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBar"/>.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.Text">
+            <summary>
+            Returns or sets the title to display in the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBar"/>.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.ShowUser">
+            <summary>
+            Shows or hides the user panel.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.UserAvatar">
+            <summary>
+            Returns or sets the user avatar to display in the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBar"/>.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.UserStatusColor">
+            <summary>
+            Returns or sets the user status color.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.UserStatus">
+            <summary>
+            Returns or sets the user status.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.UserName">
+            <summary>
+            Returns or sets the user name.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.Items">
+            <summary>
+            Returns the collection of items to display in the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBar"/>.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.NavigationBar.NavigationBar.GetGravatarUrl(System.String)">
+            <summary>
+            Returns the URL for the https://en.gravatar.com associated
+            to specified <paramref name="email"/> address.
+            </summary>
+            <param name="email">Email address for which to retrieve the gravatar URL.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.AutoSize">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.AutoSizeMode">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.AutoScrollMargin">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.AutoScrollMinSize">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.AutoScroll">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.Tools">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.TabIndex">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.CausesValidation">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.Anonymous">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.ShowCloseButton">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.ShowHeader">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.Collapsed">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.CollapseSide">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.CollapsedBounds">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.AutoShow">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.Image">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.ImageIndex">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.ImageKey">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.ImageSource">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.ImageList">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.Movable">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.AppearanceKey">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.HeaderAlignment">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.HeaderPosition">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.HeaderSize">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.HeaderBackColor">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.HeaderForeColor">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.ScrollBars">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.BorderStyle">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.HorizontalAlign">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.VerticalAlign">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBar.Spacing">
+            <exclude/>
+        </member>
+        <member name="E:Wisej.Web.Ext.NavigationBar.NavigationBar.PanelCollapsed">
+            <exclude/>
+        </member>
+        <member name="E:Wisej.Web.Ext.NavigationBar.NavigationBar.PanelExpanded">
+            <exclude/>
+        </member>
+        <member name="E:Wisej.Web.Ext.NavigationBar.NavigationBar.ToolClick">
+            <exclude/>
+        </member>
+        <member name="F:Wisej.Web.Ext.NavigationBar.NavigationBar.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.NavigationBar.NavigationBar.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.NavigationBar.NavigationBar.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem">
+            <summary>
+            Represents a navigation item in the <see cref="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.NavigationBar"/> control.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.NavigationBar.NavigationBarItem.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem"/> class.
+            </summary>
+        </member>
+        <member name="E:Wisej.Web.Ext.NavigationBar.NavigationBarItem.ShortcutClick">
+            <summary>
+            Fired when the user clicks the shortcut icon.
+            </summary>
+        </member>
+        <member name="E:Wisej.Web.Ext.NavigationBar.NavigationBarItem.InfoClick">
+            <summary>
+            Fired when the user clicks the info "bubble".
+            </summary>
+        </member>
+        <member name="E:Wisej.Web.Ext.NavigationBar.NavigationBarItem.Expand">
+            <summary>
+            Fired when the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem"/> is expanded to show the
+            child items.
+            </summary>
+        </member>
+        <member name="E:Wisej.Web.Ext.NavigationBar.NavigationBarItem.Collapse">
+            <summary>
+             Fired when the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem"/> is collapsed to hide
+             child items.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.NavigationBar.NavigationBarItem.OnShortcutClick(System.EventArgs)">
+            <summary>
+            Fires the <see cref="E:Wisej.Web.Ext.NavigationBar.NavigationBarItem.ShortcutClick"/> event.
+            </summary>
+            <param name="e">Not used</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.NavigationBar.NavigationBarItem.OnInfoClick(System.EventArgs)">
+            <summary>
+            Fires the <see cref="E:Wisej.Web.Ext.NavigationBar.NavigationBarItem.InfoClick"/> event.
+            </summary>
+            <param name="e">Not used</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.NavigationBar.NavigationBarItem.OnExpand(System.EventArgs)">
+            <summary>
+            Fires the <see cref="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.Expanded"/> event.
+            </summary>
+            <param name="e">Not used</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.NavigationBar.NavigationBarItem.OnCollapse(System.EventArgs)">
+            <summary>
+            Fires the <see cref="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.Collapsed"/> event.
+            </summary>
+            <param name="e">Not used</param>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.NavigationBar">
+            <summary>
+            Returns the owner <see cref="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.NavigationBar"/>.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.Icon">
+            <summary>
+            Returns or sets the icon of the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem"/>.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.Cursor">
+            <summary>
+            Returns or sets the icon of the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem"/>.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.Text">
+            <summary>
+            Returns or sets the title of the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem"/>.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.Items">
+            <summary>
+            Returns the collection of items to display in the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem"/>.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.BackColor">
+            <summary>
+            Returns or sets the background color.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.ForeColor">
+            <summary>
+            Returns or sets the text color.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.Expanded">
+            <summary>
+            Expands or collapses child items.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.InfoText">
+            <summary>
+            Returns or sets the text to show in the info "bubble" next to the item.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.InfoTextBackColor">
+            <summary>
+            Returns or sets the background color of the info "bubble".
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.InfoTextForeColor">
+            <summary>
+            Returns or sets the text color of the info "bubble".
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.ShowShortcut">
+            <summary>
+            Shows or hides the shortcut button.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.ShortcutIcon">
+            <summary>
+            Returns or sets the shortcut icon.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.MaximumSize">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.MinimumSize">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.Size">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.Location">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.Dock">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.Margin">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.Padding">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.AutoSize">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.AutoSizeMode">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.AutoScrollMargin">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.AutoScrollMinSize">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.AutoScroll">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.Anchor">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.Tools">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.TabIndex">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.ResizableEdges">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.CausesValidation">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.Anonymous">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.ShowCloseButton">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.ShowHeader">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.Collapsed">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.CollapseSide">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.CollapsedBounds">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.AutoShow">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.BackgroundImage">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.BackgroundImageSource">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.BackgroundImageLayout">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.Image">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.ImageIndex">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.ImageKey">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.ImageSource">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.ImageList">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.Movable">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.AppearanceKey">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.HeaderAlignment">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.HeaderPosition">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.HeaderSize">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.HeaderBackColor">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.HeaderForeColor">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.ScrollBars">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.BorderStyle">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.HorizontalAlign">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.VerticalAlign">
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItem.Spacing">
+            <exclude/>
+        </member>
+        <member name="E:Wisej.Web.Ext.NavigationBar.NavigationBarItem.PanelCollapsed">
+            <exclude/>
+        </member>
+        <member name="E:Wisej.Web.Ext.NavigationBar.NavigationBarItem.PanelExpanded">
+            <exclude/>
+        </member>
+        <member name="E:Wisej.Web.Ext.NavigationBar.NavigationBarItem.ToolClick">
+            <exclude/>
+        </member>
+        <member name="F:Wisej.Web.Ext.NavigationBar.NavigationBarItem.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.NavigationBar.NavigationBarItem.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.NavigationBar.NavigationBarItem.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Wisej.Web.Ext.NavigationBar.NavigationBarItemClickEventHandler">
+            <summary>
+            Represents a method that handles the <see cref="E:Wisej.Web.Ext.NavigationBar.NavigationBar.ItemClick"/> event.
+            </summary>
+            <param name="sender">The <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBar"/> that fired the event.</param>
+            <param name="e">An instance of <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItemClickEventArgs"/> containing the event data.</param>
+        </member>
+        <member name="T:Wisej.Web.Ext.NavigationBar.NavigationBarItemClickEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Wisej.Web.Ext.NavigationBar.NavigationBar.ItemClick"/> event.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.NavigationBar.NavigationBarItemClickEventArgs.#ctor(Wisej.Web.Ext.NavigationBar.NavigationBarItem)">
+            <summary>
+            Initializes a new instance of <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItemClickEventArgs"/>.
+            </summary>
+            <param name="item">The <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem"/> that triggered the event.</param>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItemClickEventArgs.Item">
+            <summary>
+            The <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem"/> that triggered the event.
+            </summary>
+        </member>
+        <member name="T:Wisej.Web.Ext.NavigationBar.NavigationBarItemCollection">
+            <summary>
+            Contains a collection of <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> objects.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItemCollection.Count">
+            <summary>
+            Returns the number of items in the collection.
+            </summary>
+            <returns>The number of items in the collection.</returns>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItemCollection.Item(System.Int32)">
+            <summary>
+            Returns or sets a <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> in the collection at the specified index.</summary>
+            <param name="index">The zero-based index of the item to get or set. </param>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+              <paramref name="index" /> is less than zero or greater than the highest available index. </exception>
+            <exception cref="T:System.ArgumentNullException">
+              <paramref name="value" /> is null. </exception>
+            <returns>The <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> at the specified index.</returns>
+        </member>
+        <member name="P:Wisej.Web.Ext.NavigationBar.NavigationBarItemCollection.Item(System.String)">
+            <summary>
+            Returns the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> with the specified key from the collection.
+            </summary>
+            <returns>The <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> with the specified key.</returns>
+            <param name="name">The name of the item to retrieve.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.NavigationBar.NavigationBarItemCollection.IndexOf(Wisej.Web.Ext.NavigationBar.NavigationBarItem)">
+            <summary>
+            Returns the index of the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> in the collection.
+            </summary>
+            <returns>The zero-based index of the item; -1 if it cannot be found.</returns>
+            <param name="item">The <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> to locate in the collection. </param>
+            <exception cref="T:System.ArgumentNullException">The value of <paramref name="item" /> is null. </exception>
+        </member>
+        <member name="M:Wisej.Web.Ext.NavigationBar.NavigationBarItemCollection.IndexOfKey(System.String)">
+            <summary>
+            Returns the index of the first occurrence of the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> with the specified key.
+            </summary>
+            <returns>The zero-based index of the first occurrence of a <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> with the specified key, if found; otherwise, -1.</returns>
+            <param name="key">The name of the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> to find in the collection.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.NavigationBar.NavigationBarItemCollection.Add(Wisej.Web.Ext.NavigationBar.NavigationBarItem)">
+            <summary>
+            Adds a <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> to the collection.
+            </summary>
+            <param name="item">The <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> to add. </param>
+            <exception cref="T:System.ArgumentNullException">The specified <paramref name="item" /> is null. </exception>
+        </member>
+        <member name="M:Wisej.Web.Ext.NavigationBar.NavigationBarItemCollection.Add(System.String)">
+            <summary>
+            Creates a <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> with the specified text, and adds it to the collection.
+            </summary>
+            <param name="text">The text to display on the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" />.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.NavigationBar.NavigationBarItemCollection.Add(System.String,System.String)">
+            <summary>
+            Creates a <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> with the specified key and text and adds it to the collection.
+            </summary>
+            <param name="key">The name of the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" />.</param>
+            <param name="text">The text to display on the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" />.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.NavigationBar.NavigationBarItemCollection.Add(System.String,System.String,System.String)">
+            <summary>
+            Creates a <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> with the specified key, text, and image, and adds it to the collection.
+            </summary>
+            <param name="key">The name of the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" />.</param>
+            <param name="text">The text to display on the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" />.</param>
+            <param name="icon">The Url or name of the icon to display on the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" />.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.NavigationBar.NavigationBarItemCollection.AddRange(Wisej.Web.Ext.NavigationBar.NavigationBarItem[])">
+            <summary>
+            Adds a set <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> objects to the collection.
+            </summary>
+            <param name="items">An array of type <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> that contains the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> to add. </param>
+            <exception cref="T:System.ArgumentNullException">The value of items is null. </exception>
+        </member>
+        <member name="M:Wisej.Web.Ext.NavigationBar.NavigationBarItemCollection.Clear">
+            <summary>
+            Removes all the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> instances from the collection.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.NavigationBar.NavigationBarItemCollection.Clear(System.Boolean)">
+            <summary>
+            Removes and disposes all <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> instances from the collection.
+            </summary>
+            <param name="dispose">Indicates whether to dispose the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> instances removed from the collection.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.NavigationBar.NavigationBarItemCollection.Contains(Wisej.Web.Ext.NavigationBar.NavigationBarItem)">
+            <summary>
+            Determines whether a specified <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> is in the collection.
+            </summary>
+            <returns>true if the specified <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> is in the collection; otherwise, false.</returns>
+            <param name="item">The <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> to locate in the collection. </param>
+            <exception cref="T:System.ArgumentNullException">The value of <paramref name="item" /> is null. </exception>
+        </member>
+        <member name="M:Wisej.Web.Ext.NavigationBar.NavigationBarItemCollection.ContainsKey(System.String)">
+            <summary>
+            Determines whether the collection contains a <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> with the specified key.
+            </summary>
+            <returns>true to indicate a <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> with the specified key was found in the collection; otherwise, false. </returns>
+            <param name="key">The name of the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> to search for.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.NavigationBar.NavigationBarItemCollection.CopyTo(Wisej.Web.Ext.NavigationBar.NavigationBarItem[],System.Int32)">
+            <summary>
+            Copies the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> instances in the collection to the specified array, starting at the specified index.
+            </summary>
+            <param name="array">The one-dimensional array that is the destination of the items copied from the collection. The array must have zero-based indexing.</param>
+            <param name="index">The zero-based index in the array at which copying begins.</param>
+            <exception cref="T:System.ArgumentNullException">
+              <paramref name="array" /> is null.</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+              <paramref name="array" /> is less than zero.</exception>
+            <exception cref="T:System.ArgumentException">
+              <paramref name="array" /> is multidimensional or the number of elements in the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItemCollection" /> is greater than the available space from index to the end of <paramref name="array" />.</exception>
+        </member>
+        <member name="M:Wisej.Web.Ext.NavigationBar.NavigationBarItemCollection.Remove(Wisej.Web.Ext.NavigationBar.NavigationBarItem)">
+            <summary>
+            Removes the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> from the collection.
+            </summary>
+            <param name="item">The <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> to remove. </param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="item" /> parameter is null. </exception>
+        </member>
+        <member name="M:Wisej.Web.Ext.NavigationBar.NavigationBarItemCollection.RemoveAt(System.Int32)">
+            <summary>
+            Removes the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> at the specified index from the collection.
+            </summary>
+            <param name="index">The zero-based index of the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> to remove. </param>
+        </member>
+        <member name="M:Wisej.Web.Ext.NavigationBar.NavigationBarItemCollection.RemoveByKey(System.String)">
+            <summary>
+            Removes the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> with the specified key from the collection.
+            </summary>
+            <param name="key">The name of the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> to remove.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.NavigationBar.NavigationBarItemCollection.Insert(System.Int32,Wisej.Web.Ext.NavigationBar.NavigationBarItem)">
+            <summary>
+            Inserts an existing <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> into the collection at the specified index. 
+            </summary>
+            <param name="index">The zero-based index location where the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> is inserted.</param>
+            <param name="item">The <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> to insert in the collection.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.NavigationBar.NavigationBarItemCollection.Insert(System.Int32,System.String)">
+            <summary>
+            Creates a new <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> with the specified text and inserts it into the collection at the specified index.
+            </summary>
+            <param name="index">The zero-based index location where the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> is inserted.</param>
+            <param name="text">The text to display in the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" />.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.NavigationBar.NavigationBarItemCollection.Insert(System.Int32,System.String,System.String)">
+            <summary>
+            Creates a new <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> with the specified key and text, and inserts it into the collection at the specified index.
+            </summary>
+            <param name="index">The zero-based index location where the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> is inserted.</param>
+            <param name="key">The name of the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" />.</param>
+            <param name="text">The text to display on the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" />.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.NavigationBar.NavigationBarItemCollection.Insert(System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Creates a <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> with the specified key, text, and image, and inserts it into the collection at the specified index.
+            </summary>
+            <param name="index">The zero-based index location where the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" /> is inserted.</param>
+            <param name="key">The name of the item.</param>
+            <param name="text">The text to display on the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" />.</param>
+            <param name="icon">The Url or name of the icon to display on the <see cref="T:Wisej.Web.Ext.NavigationBar.NavigationBarItem" />.</param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,10 @@
+<FileList>
+	<File Reference="ActiproSoftware.Navigation.WinForms.dll">
+		<ToolboxItems UIFramework="WinForms" VSCategory="Actipro WinForms Controls" BlendCategory="Actipro WinForms Controls">
+
+			<Item Type="ActiproSoftware.UI.WinForms.Controls.Navigation.NavigationBar" />
+			<Item Type="ActiproSoftware.UI.WinForms.Controls.Navigation.NavigationBarPanel" />
+
+		</ToolboxItems>
+	</File>
+</FileList>
