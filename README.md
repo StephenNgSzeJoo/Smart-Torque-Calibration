@@ -1,5 +1,5 @@
 # Smart-Torque-Calibration
-The Smart Torque Calibration Module automates the torque calibration process, significantly reducing cycle time by approximately 50%. This repository contains the source code and documentation for the module, which is a part of the SAPPHIRE system used by the Calibration Department.
+The Smart Torque Calibration Module automates the torque calibration process, significantly reducing cycle time by approximately 50%. This repository contains the source code and documentation for the module used by the Calibration Department.
 
 # Features
 Automated Calibration Process: Streamlines the torque calibration process, saving time and improving efficiency.
